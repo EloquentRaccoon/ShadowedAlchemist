@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://danttr5isk6ru"]
+
+[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_hcguu"]
+
+[resource]
+script = ExtResource("1_hcguu")
+base_folder = "res://src/assets/entity/elements/resources"
+includes = Array[String](["**.tres"])
+excludes = Array[String]([])
+paths = Array[String](["res://src/assets/entity/elements/resources/air.tres", "res://src/assets/entity/elements/resources/ash.tres", "res://src/assets/entity/elements/resources/chalk.tres", "res://src/assets/entity/elements/resources/copper.tres", "res://src/assets/entity/elements/resources/earth.tres", "res://src/assets/entity/elements/resources/fire.tres", "res://src/assets/entity/elements/resources/gold.tres", "res://src/assets/entity/elements/resources/gunpowder.tres", "res://src/assets/entity/elements/resources/iron.tres", "res://src/assets/entity/elements/resources/lead.tres", "res://src/assets/entity/elements/resources/mercury.tres", "res://src/assets/entity/elements/resources/mortum.tres", "res://src/assets/entity/elements/resources/oil.tres", "res://src/assets/entity/elements/resources/salt.tres", "res://src/assets/entity/elements/resources/silver.tres", "res://src/assets/entity/elements/resources/sulfur.tres", "res://src/assets/entity/elements/resources/tin.tres", "res://src/assets/entity/elements/resources/water.tres"])

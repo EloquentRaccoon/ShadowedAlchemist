@@ -1,0 +1,164 @@
+[gd_scene load_steps=24 format=3 uid="uid://bdtjl465lfqeq"]
+
+[ext_resource type="Texture2D" uid="uid://jtwjdgebna2l" path="res://Art/Elements/Transmutation background.png" id="1_o41w7"]
+[ext_resource type="Script" path="res://Scenes/Transmutation/Transmutation.gd" id="1_y5qke"]
+[ext_resource type="Script" path="res://Scenes/Transmutation/GridContainer.gd" id="6_28ecp"]
+[ext_resource type="Texture2D" uid="uid://bnxkugfn1irej" path="res://Art/Elements/Water.png" id="6_w4uny"]
+[ext_resource type="Texture2D" uid="uid://cuk1vy6hl5m5x" path="res://Art/Elements/Air.png" id="7_3ts54"]
+[ext_resource type="Texture2D" uid="uid://qr8utkm1thxi" path="res://Art/Elements/Ash.png" id="7_iy17g"]
+[ext_resource type="Texture2D" uid="uid://dacrmcof83cxn" path="res://Art/Elements/Chalk.png" id="8_5adqs"]
+[ext_resource type="Texture2D" uid="uid://bij0ms236yv0s" path="res://Art/Elements/Earth.png" id="9_4nryf"]
+[ext_resource type="Texture2D" uid="uid://dhokastjyj32s" path="res://Art/Elements/Salt.png" id="10_erj7v"]
+[ext_resource type="Texture2D" uid="uid://q8p1bjqqunoo" path="res://Art/Elements/Fire.png" id="10_ijrse"]
+[ext_resource type="Texture2D" uid="uid://ief355uh20g0" path="res://Art/Elements/Gold.png" id="11_m3yfu"]
+[ext_resource type="Texture2D" uid="uid://b6ptluallkd0a" path="res://Art/Elements/Sulfur.png" id="11_qc8sm"]
+[ext_resource type="Texture2D" uid="uid://cayl3ltsk2cad" path="res://Art/Elements/Iron.png" id="12_2cugk"]
+[ext_resource type="Texture2D" uid="uid://bhvf3r5w62rhh" path="res://Art/Elements/Gunpowder.png" id="12_laqvx"]
+[ext_resource type="Texture2D" uid="uid://botdk5nugs12m" path="res://Art/Elements/Tin.png" id="15_c28a1"]
+[ext_resource type="Texture2D" uid="uid://cjjllftkqugif" path="res://Art/Elements/Silver.png" id="16_58sdt"]
+[ext_resource type="Texture2D" uid="uid://b8jyupf7uxnny" path="res://Art/Elements/Copper.png" id="17_n6e16"]
+[ext_resource type="Texture2D" uid="uid://dmi5n83ktdcef" path="res://Art/Elements/Lead.png" id="18_555p8"]
+[ext_resource type="Texture2D" uid="uid://bady4jvw6hgr0" path="res://Art/Elements/Mercury.png" id="19_mdjwx"]
+[ext_resource type="Texture2D" uid="uid://de3af1xwk76mx" path="res://Art/Elements/Oil.png" id="20_2pxgl"]
+[ext_resource type="Texture2D" uid="uid://bd6wy2grk2eq2" path="res://Art/Elements/Mortum.png" id="21_2mchf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tu0xf"]
+size = Vector2(64, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rfnc8"]
+size = Vector2(64, 80)
+
+[node name="Transmutation" type="Node2D"]
+script = ExtResource("1_y5qke")
+
+[node name="TransmutationBackground" type="Sprite2D" parent="."]
+position = Vector2(320, 240)
+texture = ExtResource("1_o41w7")
+metadata/_edit_lock_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 63.0
+offset_top = 63.0
+offset_right = 576.0
+offset_bottom = 1787.0
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+metadata/_edit_group_ = true
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+visible = false
+layout_mode = 2
+script = ExtResource("6_28ecp")
+
+[node name="Earth" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("9_4nryf")
+
+[node name="Fire" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("10_ijrse")
+
+[node name="Water" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("6_w4uny")
+
+[node name="Air" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("7_3ts54")
+
+[node name="Ash" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("7_iy17g")
+
+[node name="Chalk" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("8_5adqs")
+
+[node name="Salt" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("10_erj7v")
+
+[node name="Sulfur" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("11_qc8sm")
+
+[node name="GunPowder" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("12_laqvx")
+
+[node name="Iron" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("12_2cugk")
+
+[node name="Gold" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("11_m3yfu")
+
+[node name="Tin" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("15_c28a1")
+
+[node name="Silver" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("16_58sdt")
+
+[node name="Copper" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("17_n6e16")
+
+[node name="Lead" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("18_555p8")
+
+[node name="Mercury" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("19_mdjwx")
+
+[node name="Oil" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("20_2pxgl")
+
+[node name="Mortum" type="Button" parent="ScrollContainer/GridContainer"]
+layout_mode = 2
+icon = ExtResource("21_2mchf")
+
+[node name="Element1" type="Area2D" parent="."]
+position = Vector2(160, 344)
+metadata/_edit_group_ = true
+
+[node name="Element1Hitbox" type="CollisionShape2D" parent="Element1"]
+shape = SubResource("RectangleShape2D_tu0xf")
+
+[node name="Sprite2D" type="Sprite2D" parent="Element1"]
+
+[node name="Element2" type="Area2D" parent="."]
+position = Vector2(304, 344)
+metadata/_edit_group_ = true
+
+[node name="Element2Hitbox" type="CollisionShape2D" parent="Element2"]
+shape = SubResource("RectangleShape2D_rfnc8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Element2"]
+
+[node name="Output" type="Sprite2D" parent="."]
+
+[connection signal="button_down" from="ScrollContainer/GridContainer/Earth" to="." method="_on_button_down" binds= ["Earth"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Fire" to="." method="_on_button_down" binds= ["Fire"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Water" to="." method="_on_button_down" binds= ["Water"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Air" to="." method="_on_button_down" binds= ["Air"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Ash" to="." method="_on_button_down" binds= ["Ash"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Chalk" to="." method="_on_button_down" binds= ["Chalk"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Salt" to="." method="_on_button_down" binds= ["Salt"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Sulfur" to="." method="_on_button_down" binds= ["Sulfur"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/GunPowder" to="." method="_on_button_down" binds= ["Gunpowder"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Iron" to="." method="_on_button_down" binds= ["Iron"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Gold" to="." method="_on_button_down" binds= ["Gold"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Tin" to="." method="_on_button_down" binds= ["Tin"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Silver" to="." method="_on_button_down" binds= ["Silver"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Copper" to="." method="_on_button_down" binds= ["Copper"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Lead" to="." method="_on_button_down" binds= ["Lead"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Mercury" to="." method="_on_button_down" binds= ["Mercury"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Oil" to="." method="_on_button_down" binds= ["Oil"]]
+[connection signal="button_down" from="ScrollContainer/GridContainer/Mortum" to="." method="_on_button_down" binds= ["Mortum"]]
+[connection signal="input_event" from="Element1" to="." method="_on_element_1_input_event"]
+[connection signal="input_event" from="Element2" to="." method="_on_element_2_input_event"]

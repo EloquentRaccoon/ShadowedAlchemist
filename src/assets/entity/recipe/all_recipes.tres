@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://cxncdbsacn8t6"]
+
+[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_l37mu"]
+
+[resource]
+script = ExtResource("1_l37mu")
+base_folder = "res://src/assets/entity/recipe/resources"
+includes = Array[String](["**.tres"])
+excludes = Array[String]([])
+paths = Array[String](["res://src/assets/entity/recipe/resources/ash.tres", "res://src/assets/entity/recipe/resources/chalk.tres", "res://src/assets/entity/recipe/resources/copper.tres", "res://src/assets/entity/recipe/resources/gold.tres", "res://src/assets/entity/recipe/resources/gunpowder.tres", "res://src/assets/entity/recipe/resources/iron.tres", "res://src/assets/entity/recipe/resources/lead.tres", "res://src/assets/entity/recipe/resources/mercury.tres", "res://src/assets/entity/recipe/resources/mortum.tres", "res://src/assets/entity/recipe/resources/oil.tres", "res://src/assets/entity/recipe/resources/salt.tres", "res://src/assets/entity/recipe/resources/silver.tres", "res://src/assets/entity/recipe/resources/sulfur.tres", "res://src/assets/entity/recipe/resources/tin.tres"])

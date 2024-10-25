@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyg8n6cenk453"]
+
+[ext_resource type="Script" path="res://src/scripts/userinterface/Ending.gd" id="1_5mefc"]
+[ext_resource type="Texture2D" uid="uid://bknt0nbvm2kes" path="res://src/assets/userinterface/interface/ending/ending.png" id="1_vy46a"]
+[ext_resource type="Texture2D" uid="uid://1b8iohl7gice" path="res://src/assets/userinterface/buttons/quit_button.png" id="2_uub6j"]
+
+[node name="Ending" type="Node2D"]
+script = ExtResource("1_5mefc")
+
+[node name="Ending" type="Sprite2D" parent="."]
+position = Vector2(320, 240)
+texture = ExtResource("1_vy46a")
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 252.0
+offset_top = 380.0
+offset_right = 388.0
+offset_bottom = 420.0
+icon = ExtResource("2_uub6j")
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

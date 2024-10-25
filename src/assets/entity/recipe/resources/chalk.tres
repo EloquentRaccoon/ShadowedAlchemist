@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Recipe_Res" load_steps=5 format=3 uid="uid://chnpvk2nnomvi"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/recipe_res.gd" id="1_rjgfh"]
+[ext_resource type="Resource" uid="uid://dptl6vvir85f3" path="res://src/assets/entity/elements/resources/water.tres" id="1_yx6ey"]
+[ext_resource type="Resource" uid="uid://lrr0exom1qgn" path="res://src/assets/entity/elements/resources/earth.tres" id="2_tl1kf"]
+[ext_resource type="Resource" uid="uid://ltjadkfqrvx1" path="res://src/assets/entity/elements/resources/chalk.tres" id="3_a53cr"]
+
+[resource]
+script = ExtResource("1_rjgfh")
+recipe_name = "chalk"
+unlocked = false
+result_element = ExtResource("3_a53cr")
+elements = Array[Resource("res://src/scripts/resources/element_res.gd")]([ExtResource("1_yx6ey"), ExtResource("2_tl1kf")])

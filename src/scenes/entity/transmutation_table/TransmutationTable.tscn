@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2txtf2uavan7"]
+
+[ext_resource type="Texture2D" uid="uid://jkmk5di0h57g" path="res://src/assets/level/overworld/House-interior-pixel-art-v1.1/House-interior-pixel-art/Sprite-0012-76x35.png" id="1_g1vgk"]
+[ext_resource type="PackedScene" uid="uid://b7xvxrnufv6pe" path="res://src/scenes/component/InteractableComponent.tscn" id="1_l4qle"]
+[ext_resource type="Script" path="res://src/scripts/manager/entity/transmutation_table/TransmutationTable.gd" id="1_sx1wt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veyoq"]
+size = Vector2(73, 41)
+
+[node name="TransmutationTable" type="Node2D"]
+script = ExtResource("1_sx1wt")
+
+[node name="InteractableComponent" parent="." instance=ExtResource("1_l4qle")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent"]
+position = Vector2(0.5, -1.5)
+shape = SubResource("RectangleShape2D_veyoq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g1vgk")

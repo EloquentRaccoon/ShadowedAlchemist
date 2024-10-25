@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Recipe_Res" load_steps=5 format=3 uid="uid://dpghnkwv8h73h"]
+
+[ext_resource type="Resource" uid="uid://b6v3klmuvuo1v" path="res://src/assets/entity/elements/resources/oil.tres" id="1_f60f4"]
+[ext_resource type="Script" path="res://src/scripts/resources/recipe_res.gd" id="1_uomtf"]
+[ext_resource type="Resource" uid="uid://c2pj1iwuei6o2" path="res://src/assets/entity/elements/resources/tin.tres" id="2_akhb5"]
+[ext_resource type="Resource" uid="uid://b5e3vree6s3sm" path="res://src/assets/entity/elements/resources/lead.tres" id="3_jp5fw"]
+
+[resource]
+script = ExtResource("1_uomtf")
+recipe_name = "lead"
+result_element = ExtResource("3_jp5fw")
+elements = Array[Resource("res://src/scripts/resources/element_res.gd")]([ExtResource("1_f60f4"), ExtResource("2_akhb5")])

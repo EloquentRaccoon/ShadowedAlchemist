@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=8 format=3 uid="uid://clh5d4sl5onb7"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/element_res.gd" id="1_gsiuj"]
+[ext_resource type="Resource" uid="uid://buob7wk5wh7fi" path="res://src/assets/entity/elements/resources/air.tres" id="1_i37n6"]
+[ext_resource type="Script" path="res://src/scripts/resources/inventory_res.gd" id="1_ifir6"]
+[ext_resource type="Resource" uid="uid://dptl6vvir85f3" path="res://src/assets/entity/elements/resources/water.tres" id="2_4vwol"]
+[ext_resource type="Resource" uid="uid://lrr0exom1qgn" path="res://src/assets/entity/elements/resources/earth.tres" id="3_yl07o"]
+[ext_resource type="Resource" uid="uid://clwx54pjvdfqj" path="res://src/assets/entity/elements/resources/fire.tres" id="4_mylf0"]
+[ext_resource type="Script" path="res://src/scripts/resources/recipe_res.gd" id="6_idc6k"]
+
+[resource]
+script = ExtResource("1_ifir6")
+_recipes = Array[ExtResource("6_idc6k")]([])
+_elements = Array[ExtResource("1_gsiuj")]([ExtResource("1_i37n6"), ExtResource("2_4vwol"), ExtResource("3_yl07o"), ExtResource("4_mylf0")])

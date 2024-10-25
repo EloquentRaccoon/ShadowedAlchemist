@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpvoyvdpr0rck"]
+
+[ext_resource type="Script" path="res://src/scripts/manager/entity/alter/Alter.gd" id="1_fbkw2"]
+[ext_resource type="Texture2D" uid="uid://wgaxs1xtonmk" path="res://src/assets/entity/altar/Altar.png" id="1_natbt"]
+[ext_resource type="PackedScene" uid="uid://b7xvxrnufv6pe" path="res://src/scenes/component/InteractableComponent.tscn" id="1_q3hjv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2iado"]
+size = Vector2(68, 60.6667)
+
+[node name="Altar" type="Node2D"]
+script = ExtResource("1_fbkw2")
+
+[node name="InteractableComponent" parent="." instance=ExtResource("1_q3hjv")]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent"]
+position = Vector2(0, 21)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_2iado")
+
+[node name="Altar" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_natbt")

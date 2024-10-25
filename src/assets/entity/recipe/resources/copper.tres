@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Recipe_Res" load_steps=5 format=3 uid="uid://bxuhip0uo2ek6"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/recipe_res.gd" id="1_nro3o"]
+[ext_resource type="Resource" uid="uid://buob7wk5wh7fi" path="res://src/assets/entity/elements/resources/air.tres" id="1_w3emc"]
+[ext_resource type="Resource" uid="uid://b3urc2tf3yk4f" path="res://src/assets/entity/elements/resources/iron.tres" id="2_an3av"]
+[ext_resource type="Resource" uid="uid://bsw23kye53f38" path="res://src/assets/entity/elements/resources/copper.tres" id="3_ya5wu"]
+
+[resource]
+script = ExtResource("1_nro3o")
+recipe_name = "copper"
+result_element = ExtResource("3_ya5wu")
+elements = Array[Resource("res://src/scripts/resources/element_res.gd")]([ExtResource("1_w3emc"), ExtResource("2_an3av")])

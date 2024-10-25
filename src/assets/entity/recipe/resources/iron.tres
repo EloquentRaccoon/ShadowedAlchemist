@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Recipe_Res" load_steps=5 format=3 uid="uid://dw6i1lkmfble5"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/recipe_res.gd" id="1_3kpvi"]
+[ext_resource type="Resource" uid="uid://lrr0exom1qgn" path="res://src/assets/entity/elements/resources/earth.tres" id="1_w1hos"]
+[ext_resource type="Resource" uid="uid://clwx54pjvdfqj" path="res://src/assets/entity/elements/resources/fire.tres" id="2_4d05x"]
+[ext_resource type="Resource" uid="uid://b3urc2tf3yk4f" path="res://src/assets/entity/elements/resources/iron.tres" id="3_6err4"]
+
+[resource]
+script = ExtResource("1_3kpvi")
+recipe_name = "iron"
+result_element = ExtResource("3_6err4")
+elements = Array[Resource("res://src/scripts/resources/element_res.gd")]([ExtResource("1_w1hos"), ExtResource("2_4d05x")])

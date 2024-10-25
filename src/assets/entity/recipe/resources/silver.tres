@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Recipe_Res" load_steps=5 format=3 uid="uid://cfyi2ig4au1wh"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/recipe_res.gd" id="1_etp8e"]
+[ext_resource type="Resource" uid="uid://drn0l4v5bpr32" path="res://src/assets/entity/elements/resources/mercury.tres" id="1_g2lgd"]
+[ext_resource type="Resource" uid="uid://b3urc2tf3yk4f" path="res://src/assets/entity/elements/resources/iron.tres" id="2_usab7"]
+[ext_resource type="Resource" uid="uid://d4d60ngh1troe" path="res://src/assets/entity/elements/resources/silver.tres" id="3_8g5n7"]
+
+[resource]
+script = ExtResource("1_etp8e")
+recipe_name = "silver"
+result_element = ExtResource("3_8g5n7")
+elements = Array[Resource("res://src/scripts/resources/element_res.gd")]([ExtResource("1_g2lgd"), ExtResource("2_usab7")])

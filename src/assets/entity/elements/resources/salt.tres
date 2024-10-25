@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Element_Res" load_steps=3 format=3 uid="uid://ul2o35rvnatb"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/element_res.gd" id="1_8172u"]
+[ext_resource type="Texture2D" uid="uid://dhokastjyj32s" path="res://src/assets/entity/elements/salt.png" id="1_nsmph"]
+
+[resource]
+script = ExtResource("1_8172u")
+name = "salt"
+unlocked = false
+image = ExtResource("1_nsmph")

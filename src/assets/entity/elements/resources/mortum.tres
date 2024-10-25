@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Element_Res" load_steps=3 format=3 uid="uid://dmkhs6o03hotp"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/element_res.gd" id="1_d7onr"]
+[ext_resource type="Texture2D" uid="uid://bd6wy2grk2eq2" path="res://src/assets/entity/elements/mortum.png" id="1_g4ym6"]
+
+[resource]
+script = ExtResource("1_d7onr")
+name = "mortum"
+unlocked = false
+image = ExtResource("1_g4ym6")

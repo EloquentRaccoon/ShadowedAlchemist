@@ -1,0 +1,182 @@
+[gd_scene load_steps=17 format=3 uid="uid://bji1nwmcyq3fd"]
+
+[ext_resource type="Script" path="res://src/scripts/manager/level/overworld/Overworld.gd" id="1_fi1ka"]
+[ext_resource type="PackedScene" uid="uid://y5vsegaecylr" path="res://src/scenes/entity/player/Player.tscn" id="2_d2ta2"]
+[ext_resource type="Texture2D" uid="uid://dld0navgrrucg" path="res://src/assets/level/overworld/House-interior-pixel-art-v1.1/House-interior-pixel-art/orange1.png" id="3_yb1vb"]
+[ext_resource type="Texture2D" uid="uid://cjfrkwxxgoibr" path="res://src/assets/level/overworld/House-interior-pixel-art-v1.1/House-interior-pixel-art/Sprite-0001-background-32x192.png" id="4_w5wb0"]
+[ext_resource type="Texture2D" uid="uid://crh3h7d128j3" path="res://src/assets/level/overworld/House-interior-pixel-art-v1.1/House-interior-pixel-art/window-56x43.png" id="5_4acmk"]
+[ext_resource type="Texture2D" uid="uid://cfht1suqx7bc4" path="res://src/assets/level/overworld/House-interior-pixel-art-v1.1/House-interior-pixel-art/Sprite-0015-76x29.png" id="6_bc730"]
+[ext_resource type="Texture2D" uid="uid://d1ntxlbk5ebmp" path="res://src/assets/level/overworld/House-interior-pixel-art-v1.1/House-interior-pixel-art/LampLight Saga-23x67.png" id="7_f6a2g"]
+[ext_resource type="Texture2D" uid="uid://c3nr58v7smjl" path="res://src/assets/level/overworld/House-interior-pixel-art-v1.1/House-interior-pixel-art/ChannelPixel-34x31.png" id="8_4r75w"]
+[ext_resource type="Texture2D" uid="uid://bmnqmi1hn02jw" path="res://src/assets/level/overworld/House-interior-pixel-art-v1.1/House-interior-pixel-art/BookshelfBlitz-46x41.png" id="9_kfyj3"]
+[ext_resource type="PackedScene" uid="uid://d2txtf2uavan7" path="res://src/scenes/entity/transmutation_table/TransmutationTable.tscn" id="10_rc2ml"]
+[ext_resource type="Resource" uid="uid://dc1odjdcmahj4" path="res://src/assets/level/transmutation/transmutation.tres" id="11_2dvyf"]
+[ext_resource type="PackedScene" uid="uid://bpvoyvdpr0rck" path="res://src/scenes/entity/altar/Altar.tscn" id="11_o5wfx"]
+[ext_resource type="Resource" uid="uid://b3fosxodnonn3" path="res://src/assets/level/shadowRealm/shadow_realm.tres" id="13_otmdd"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0phjn"]
+texture = ExtResource("3_yb1vb")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2xy3c"]
+texture = ExtResource("4_w5wb0")
+texture_region_size = Vector2i(32, 192)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(15.9983, 95.9898, 15.9983, 53.9169, -15.6447, 53.9169, -15.8215, 95.9898)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+0:3/0 = 0
+0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_0/angular_velocity = 0.0
+1:3/0 = 0
+1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:3/0/physics_layer_0/angular_velocity = 0.0
+0:4/0 = 0
+0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_0/angular_velocity = 0.0
+1:4/0 = 0
+1:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:4/0/physics_layer_0/angular_velocity = 0.0
+0:5/0 = 0
+0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:5/0/physics_layer_0/angular_velocity = 0.0
+1:5/0 = 0
+1:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:5/0/physics_layer_0/angular_velocity = 0.0
+0:6/0 = 0
+0:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:6/0/physics_layer_0/angular_velocity = 0.0
+1:6/0 = 0
+1:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:6/0/physics_layer_0/angular_velocity = 0.0
+0:7/0 = 0
+0:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:7/0/physics_layer_0/angular_velocity = 0.0
+1:7/0 = 0
+1:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:7/0/physics_layer_0/angular_velocity = 0.0
+0:8/0 = 0
+0:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:8/0/physics_layer_0/angular_velocity = 0.0
+1:8/0 = 0
+1:8/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:8/0/physics_layer_0/angular_velocity = 0.0
+0:9/0 = 0
+0:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:9/0/physics_layer_0/angular_velocity = 0.0
+1:9/0 = 0
+1:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:9/0/physics_layer_0/angular_velocity = 0.0
+0:10/0 = 0
+0:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:10/0/physics_layer_0/angular_velocity = 0.0
+1:10/0 = 0
+1:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:10/0/physics_layer_0/angular_velocity = 0.0
+0:11/0 = 0
+0:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:11/0/physics_layer_0/angular_velocity = 0.0
+1:11/0 = 0
+1:11/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:11/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_jeycy"]
+physics_layer_0/collision_layer = 1
+sources/7 = SubResource("TileSetAtlasSource_2xy3c")
+sources/18 = SubResource("TileSetAtlasSource_0phjn")
+
+[node name="Overworld" type="Node2D"]
+position = Vector2(68, 64)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_fi1ka")
+
+[node name="Player" parent="." instance=ExtResource("2_d2ta2")]
+unique_name_in_owner = true
+z_index = 9
+position = Vector2(14, 150.667)
+scale = Vector2(1.5, 1.5)
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+scale = Vector2(1.5, 1.5)
+limit_left = -200
+limit_top = 0
+limit_right = 805
+limit_bottom = 478
+editor_draw_limits = true
+metadata/_edit_lock_ = true
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2(1.5, 1.5)
+tile_set = SubResource("TileSet_jeycy")
+format = 2
+layer_0/tile_data = PackedInt32Array(393209, 7, 0, 393211, 7, 0, 393213, 7, 0, 393215, 7, 0, 327681, 7, 0, 327683, 7, 0, 327685, 7, 0, 327687, 7, 0, 327689, 7, 0, 327691, 7, 0, 327693, 7, 0, 327695, 7, 0, 327697, 7, 0, 327699, 7, 0, -8, 18, 0, -7, 18, 0, -6, 18, 0, -5, 18, 0, -4, 18, 0, -3, 18, 0, -2, 18, 0, -1, 18, 0, -65536, 18, 0, -65535, 18, 0, -65534, 18, 0, -65533, 18, 0, -65532, 18, 0, -65531, 18, 0, -65530, 18, 0, -65529, 18, 0, -65528, 18, 0, -65527, 18, 0, -65526, 18, 0, -65525, 18, 0, -65524, 18, 0, -65523, 18, 0, -65522, 18, 0, -65521, 18, 0, -65520, 18, 0, -65519, 18, 0, -65518, 18, 0, -65517, 18, 0, -65516, 18, 0, -131052, 18, 0, -131053, 18, 0, -131054, 18, 0, -131055, 18, 0, -131056, 18, 0, -131057, 18, 0, -131058, 18, 0, -131059, 18, 0, -131060, 18, 0, -131061, 18, 0, -131062, 18, 0, -131063, 18, 0, -131064, 18, 0, -131065, 18, 0, -131066, 18, 0, -131067, 18, 0, -131068, 18, 0, -131069, 18, 0, -131070, 18, 0, -131071, 18, 0, -131072, 18, 0, -65537, 18, 0, -65538, 18, 0, -65539, 18, 0, -65540, 18, 0, -65541, 18, 0, -65542, 18, 0, -65543, 18, 0, -65544, 18, 0)
+
+[node name="Window-56x43" type="Sprite2D" parent="."]
+position = Vector2(-40.6667, 94)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_4acmk")
+
+[node name="Window-56x44" type="Sprite2D" parent="."]
+position = Vector2(289.333, 87.3333)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_4acmk")
+
+[node name="Sprite-0015-76x29" type="Sprite2D" parent="."]
+position = Vector2(137.333, 180.667)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_bc730")
+
+[node name="LampLightSaga-23x67" type="Sprite2D" parent="."]
+position = Vector2(438, 145.333)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_f6a2g")
+
+[node name="ChannelPixel-34x31" type="Sprite2D" parent="."]
+position = Vector2(135.333, 141.333)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("8_4r75w")
+
+[node name="BookshelfBlitz-46x41" type="Sprite2D" parent="."]
+position = Vector2(381.333, 168.667)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("9_kfyj3")
+
+[node name="TransmutationTable" parent="." instance=ExtResource("10_rc2ml")]
+position = Vector2(-83.3333, 172.667)
+scale = Vector2(1.5, 1.5)
+scene_destination = ExtResource("11_2dvyf")
+
+[node name="Altar" parent="." instance=ExtResource("11_o5wfx")]
+position = Vector2(384, 107.333)
+scale = Vector2(0.3, 0.3)
+scene_destination = ExtResource("13_otmdd")
+
+[connection signal="switch_scene" from="TransmutationTable" to="." method="_on_switch_scene"]
+[connection signal="switch_scene" from="Altar" to="." method="_on_switch_scene"]

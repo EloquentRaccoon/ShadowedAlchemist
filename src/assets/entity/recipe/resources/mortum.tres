@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Recipe_Res" load_steps=5 format=3 uid="uid://p7akhhgy3ba0"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/recipe_res.gd" id="1_xp6wx"]
+[ext_resource type="Resource" uid="uid://b5e3vree6s3sm" path="res://src/assets/entity/elements/resources/lead.tres" id="1_yu80s"]
+[ext_resource type="Resource" uid="uid://drn0l4v5bpr32" path="res://src/assets/entity/elements/resources/mercury.tres" id="2_48vok"]
+[ext_resource type="Resource" uid="uid://dmkhs6o03hotp" path="res://src/assets/entity/elements/resources/mortum.tres" id="3_0i4tb"]
+
+[resource]
+script = ExtResource("1_xp6wx")
+recipe_name = "mortum"
+result_element = ExtResource("3_0i4tb")
+elements = Array[Resource("res://src/scripts/resources/element_res.gd")]([ExtResource("1_yu80s"), ExtResource("2_48vok")])

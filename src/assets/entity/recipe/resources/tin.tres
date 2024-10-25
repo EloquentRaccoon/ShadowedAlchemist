@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Recipe_Res" load_steps=5 format=3 uid="uid://bxj80qt6f0d3i"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/recipe_res.gd" id="1_xegb0"]
+[ext_resource type="Resource" uid="uid://drn0l4v5bpr32" path="res://src/assets/entity/elements/resources/mercury.tres" id="1_yk5kk"]
+[ext_resource type="Resource" uid="uid://ckgd0da0x2c6b" path="res://src/assets/entity/elements/resources/ash.tres" id="2_py5pl"]
+[ext_resource type="Resource" uid="uid://c2pj1iwuei6o2" path="res://src/assets/entity/elements/resources/tin.tres" id="3_520h8"]
+
+[resource]
+script = ExtResource("1_xegb0")
+recipe_name = "tin"
+result_element = ExtResource("3_520h8")
+elements = Array[Resource("res://src/scripts/resources/element_res.gd")]([ExtResource("1_yk5kk"), ExtResource("2_py5pl")])

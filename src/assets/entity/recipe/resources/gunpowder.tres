@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Recipe_Res" load_steps=5 format=3 uid="uid://cyvkudyp08x4s"]
+
+[ext_resource type="Resource" uid="uid://bdbwsr4rqqtc7" path="res://src/assets/entity/elements/resources/sulfur.tres" id="1_qkrwq"]
+[ext_resource type="Script" path="res://src/scripts/resources/recipe_res.gd" id="1_yyvxq"]
+[ext_resource type="Resource" uid="uid://ul2o35rvnatb" path="res://src/assets/entity/elements/resources/salt.tres" id="2_frj07"]
+[ext_resource type="Resource" uid="uid://c81i686r0pky" path="res://src/assets/entity/elements/resources/gunpowder.tres" id="3_8p0sk"]
+
+[resource]
+script = ExtResource("1_yyvxq")
+recipe_name = "gunpowder"
+result_element = ExtResource("3_8p0sk")
+elements = Array[Resource("res://src/scripts/resources/element_res.gd")]([ExtResource("1_qkrwq"), ExtResource("2_frj07")])

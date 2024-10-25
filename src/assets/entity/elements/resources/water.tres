@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Element_Res" load_steps=3 format=3 uid="uid://dptl6vvir85f3"]
+
+[ext_resource type="Texture2D" uid="uid://bnxkugfn1irej" path="res://src/assets/entity/elements/water.png" id="1_spyu5"]
+[ext_resource type="Script" path="res://src/scripts/resources/element_res.gd" id="2_q0dap"]
+
+[resource]
+script = ExtResource("2_q0dap")
+name = "water"
+image = ExtResource("1_spyu5")

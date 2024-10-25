@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdtjl465lfqeq"]
+
+[ext_resource type="Texture2D" uid="uid://jtwjdgebna2l" path="res://src/assets/environment/transmutation/transmutation_background.png" id="1_o41w7"]
+[ext_resource type="Script" path="res://src/scenes/level/transmutation/Transmutation.gd" id="1_y5qke"]
+[ext_resource type="Texture2D" uid="uid://b8x5hyjyl8jy0" path="res://src/assets/userinterface/buttons/previous_button.png" id="4_irw4y"]
+[ext_resource type="Script" path="res://src/scenes/level/transmutation/GridContainer.gd" id="6_28ecp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tu0xf"]
+size = Vector2(64, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rfnc8"]
+size = Vector2(64, 80)
+
+[node name="Transmutation" type="Node2D"]
+script = ExtResource("1_y5qke")
+
+[node name="TransmutationBackground" type="Sprite2D" parent="."]
+position = Vector2(320, 240)
+texture = ExtResource("1_o41w7")
+metadata/_edit_lock_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 63.0
+offset_top = 63.0
+offset_right = 576.0
+offset_bottom = 1787.0
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
+metadata/_edit_group_ = true
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+layout_mode = 2
+script = ExtResource("6_28ecp")
+
+[node name="Element1" type="Area2D" parent="."]
+position = Vector2(160, 344)
+metadata/_edit_group_ = true
+
+[node name="Element1Hitbox" type="CollisionShape2D" parent="Element1"]
+shape = SubResource("RectangleShape2D_tu0xf")
+
+[node name="Sprite2D" type="Sprite2D" parent="Element1"]
+
+[node name="Element2" type="Area2D" parent="."]
+position = Vector2(304, 344)
+metadata/_edit_group_ = true
+
+[node name="Element2Hitbox" type="CollisionShape2D" parent="Element2"]
+shape = SubResource("RectangleShape2D_rfnc8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Element2"]
+
+[node name="Output" type="Sprite2D" parent="."]
+position = Vector2(480, 344)
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 588.0
+offset_top = 17.0
+offset_right = 626.0
+offset_bottom = 54.0
+icon = ExtResource("4_irw4y")
+
+[connection signal="input_event" from="Element1" to="." method="_on_element_1_input_event"]
+[connection signal="input_event" from="Element2" to="." method="_on_element_2_input_event"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

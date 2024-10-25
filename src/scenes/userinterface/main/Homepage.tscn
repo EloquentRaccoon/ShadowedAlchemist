@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://cj0mfle8sl73f"]
+
+[ext_resource type="Script" path="res://src/scripts/userinterface/Homepage.gd" id="1_5ot1s"]
+[ext_resource type="Texture2D" uid="uid://cklib81pijl64" path="res://src/assets/userinterface/interface/homepage/homepage.png" id="2_876m0"]
+[ext_resource type="Texture2D" uid="uid://ke1k0vtracen" path="res://src/assets/userinterface/buttons/play_button.png" id="3_4k1t3"]
+[ext_resource type="Texture2D" uid="uid://dw76ngojreh4h" path="res://src/assets/userinterface/buttons/settings_button.png" id="4_jmtrh"]
+[ext_resource type="Texture2D" uid="uid://1b8iohl7gice" path="res://src/assets/userinterface/buttons/quit_button.png" id="5_krdv0"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_5ot1s")
+playScene = 1
+
+[node name="Homepage" type="Sprite2D" parent="."]
+texture = ExtResource("2_876m0")
+centered = false
+
+[node name="Play" type="Button" parent="."]
+offset_left = 252.0
+offset_top = 284.0
+offset_right = 388.0
+offset_bottom = 324.0
+icon = ExtResource("3_4k1t3")
+
+[node name="Settings" type="Button" parent="."]
+offset_left = 252.0
+offset_top = 332.0
+offset_right = 388.0
+offset_bottom = 372.0
+icon = ExtResource("4_jmtrh")
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 252.0
+offset_top = 380.0
+offset_right = 388.0
+offset_bottom = 420.0
+icon = ExtResource("5_krdv0")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

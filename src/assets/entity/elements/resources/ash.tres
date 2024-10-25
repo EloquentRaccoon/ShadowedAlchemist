@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Element_Res" load_steps=3 format=3 uid="uid://ckgd0da0x2c6b"]
+
+[ext_resource type="Texture2D" uid="uid://qr8utkm1thxi" path="res://src/assets/entity/elements/ash.png" id="1_1rgr6"]
+[ext_resource type="Script" path="res://src/scripts/resources/element_res.gd" id="1_c2sqb"]
+
+[resource]
+script = ExtResource("1_c2sqb")
+name = "ash"
+image = ExtResource("1_1rgr6")

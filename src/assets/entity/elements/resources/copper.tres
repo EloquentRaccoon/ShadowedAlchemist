@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Element_Res" load_steps=3 format=3 uid="uid://bsw23kye53f38"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/element_res.gd" id="1_m3yw3"]
+[ext_resource type="Texture2D" uid="uid://b8jyupf7uxnny" path="res://src/assets/entity/elements/copper.png" id="1_ndcjh"]
+
+[resource]
+script = ExtResource("1_m3yw3")
+name = "copper"
+unlocked = false
+image = ExtResource("1_ndcjh")

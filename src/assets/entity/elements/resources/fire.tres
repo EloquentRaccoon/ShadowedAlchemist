@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Element_Res" load_steps=3 format=3 uid="uid://clwx54pjvdfqj"]
+
+[ext_resource type="Texture2D" uid="uid://q8p1bjqqunoo" path="res://src/assets/entity/elements/fire.png" id="1_asyhg"]
+[ext_resource type="Script" path="res://src/scripts/resources/element_res.gd" id="2_v730i"]
+
+[resource]
+script = ExtResource("2_v730i")
+name = "fire"
+image = ExtResource("1_asyhg")

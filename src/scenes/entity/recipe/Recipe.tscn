@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://ben6hvcebslfx"]
+
+[ext_resource type="Script" path="res://src/scripts/manager/entity/recipe/Recipe.gd" id="1_pb76e"]
+[ext_resource type="PackedScene" uid="uid://b7xvxrnufv6pe" path="res://src/scenes/component/InteractableComponent.tscn" id="2_mo1fn"]
+[ext_resource type="Texture2D" uid="uid://5rm8giyg0dy" path="res://src/assets/entity/recipe/recipe.png" id="2_tujj1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3p57b"]
+size = Vector2(70, 72)
+
+[node name="Recipe" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_pb76e")
+
+[node name="InteractableComponent" parent="." instance=ExtResource("2_mo1fn")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent"]
+position = Vector2(-2, 1)
+shape = SubResource("RectangleShape2D_3p57b")
+
+[node name="Icon" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+texture = ExtResource("2_tujj1")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -108.0
+offset_top = -122.0
+offset_right = 108.0
+offset_bottom = -46.0
+fit_content = true
+scroll_active = false
+
+[node name="Element" type="RichTextLabel" parent="."]
+offset_left = -106.0
+offset_top = -186.0
+offset_right = 110.0
+offset_bottom = -110.0
+fit_content = true
+scroll_active = false

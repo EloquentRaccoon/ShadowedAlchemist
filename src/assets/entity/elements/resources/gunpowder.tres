@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Element_Res" load_steps=3 format=3 uid="uid://c81i686r0pky"]
+
+[ext_resource type="Script" path="res://src/scripts/resources/element_res.gd" id="1_hrpag"]
+[ext_resource type="Texture2D" uid="uid://bhvf3r5w62rhh" path="res://src/assets/entity/elements/gunpowder.png" id="1_n5sea"]
+
+[resource]
+script = ExtResource("1_hrpag")
+name = "gunpowder"
+unlocked = false
+image = ExtResource("1_n5sea")

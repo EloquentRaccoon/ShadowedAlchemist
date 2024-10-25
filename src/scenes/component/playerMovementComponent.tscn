@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c44nrsdp5ao8w"]
+
+[ext_resource type="Script" path="res://src/scripts/manager/entity/player/PlayerMovement.gd" id="1_qauud"]
+
+[node name="PlayerMovementComponent" type="Node2D"]
+script = ExtResource("1_qauud")
+
+[node name="Coyote_Timer" type="Timer" parent="."]
+
+[node name="Jump_Buffer_Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Coyote_Timer" to="." method="_on_coyote_timer_timeout"]
+[connection signal="timeout" from="Jump_Buffer_Timer" to="." method="_on_jump_buffer_timer_timeout"]

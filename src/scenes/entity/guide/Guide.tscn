@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=3 uid="uid://b6wjnw0hg653m"]
+
+[ext_resource type="Texture2D" uid="uid://dm16q055a7f4h" path="res://src/assets/entity/guide/guide_spritesheet.png" id="1_bbcnt"]
+[ext_resource type="PackedScene" uid="uid://b7xvxrnufv6pe" path="res://src/scenes/component/InteractableComponent.tscn" id="2_10bhl"]
+[ext_resource type="Script" path="res://src/scripts/manager/entity/guide/Guide.gd" id="2_fc8vt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0bkvq"]
+size = Vector2(127, 77)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbx5w"]
+atlas = ExtResource("1_bbcnt")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qd20"]
+atlas = ExtResource("1_bbcnt")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_euvgr"]
+atlas = ExtResource("1_bbcnt")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylacx"]
+atlas = ExtResource("1_bbcnt")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6q7kd"]
+animations = [{
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_vbx5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7qd20")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_euvgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylacx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Guide" type="Node2D"]
+script = ExtResource("2_fc8vt")
+
+[node name="InteractableComponent" parent="." instance=ExtResource("2_10bhl")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableComponent"]
+position = Vector2(0, 4.5)
+shape = SubResource("RectangleShape2D_0bkvq")
+
+[node name="Guide" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_6q7kd")
+frame_progress = 0.874351
+speed_scale = 0.8
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -192.0
+offset_top = -158.0
+offset_right = 197.0
+offset_bottom = -42.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -180.5
+offset_top = 7.0
+offset_right = 185.5
+offset_bottom = 112.0
+grow_horizontal = 2
+scroll_active = false
